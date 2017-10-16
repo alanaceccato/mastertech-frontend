@@ -1,0 +1,22 @@
+<div>0</div>
+<div>0</div>
+<div>0</div>
+
+<script>
+  const valDiv = document.querySelectorAll('div');
+  //
+  // const contador = (valor) => {
+  //   return valor++;
+  // }
+  //
+  // valDiv.addEventListener('click', (event) => {
+  //   // valDiv.innerHTML = contador(event.target.innerHTML);
+  //   event.target.innerHTML++;
+  // });
+
+  for (let div of valDiv) {
+    div.addEventListener('mouseover', (event) => {
+      event.target.innerHTML++;
+    });
+  }
+</script>

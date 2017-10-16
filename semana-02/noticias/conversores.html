@@ -1,0 +1,42 @@
+<div class="box-moeda">
+  <h3>Conversor Reais - Dólares</h3>
+  <!-- <input type="text" onchange="converterParaDolar(this.value)"> -->
+  <input type="text">
+  <p></p>
+</div>
+
+<div class="box-peso">
+  <h3>Conversor Libras - Kilos</h3>
+  <input type="text">
+  <p></p>
+</div>
+
+<script type="text/javascript">
+  const valorDolar = 0.31602;
+  const valorLibra = 0.453592;
+  const boxmoedainput = document.querySelector('.box-moeda input');
+  const boxmoedap = document.querySelector('.box-moeda p');
+  const boxpesoinput = document.querySelector('.box-peso input');
+  const boxpesop = document.querySelector('.box-peso p');
+
+  const converterParaDolar = (reais) => {
+    // p.innerHTML = reais * valorDolar;
+    return reais * valorDolar;
+  }
+
+  const converterParaKilos = (libras) => {
+    return libras * valorLibra;
+  }
+  //
+  // input.addEventListener('keyup', (event) => {
+  //   p.innerHTML = converterParaDolar(event.target.value);
+  // });
+
+  boxmoedainput.addEventListener('keyup', (event) => {
+    boxmoedap.innerHTML = converterParaDolar(event.target.value);
+  });
+
+  boxpesoinput.addEventListener('keyup', (event) => {
+    boxpesop.innerHTML = converterParaKilos(event.target.value);
+  });
+</script>

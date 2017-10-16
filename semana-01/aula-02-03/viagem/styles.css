@@ -1,0 +1,103 @@
+/*Retira as margens do body*/
+body{
+    margin: 0;
+}
+
+/*Alinhar o meu titulo ao centro e mudar o tamanho da fonte*/
+h1{
+  text-align: center;
+  font-size: 40px;
+}
+
+/*Macete para alinhar uma imagem no centro, utilizando o margin: auto e display: block*/
+/*img{
+  width: 90%;
+  border: solid 1px #ddd;
+  margin: auto;
+  display: block;
+}*/
+
+/*Coloca margem na laterais e zera as do top e bottom. Alinha o texto justificado*/
+section{
+  /*margin: 0 5%;*/
+  text-align: justify;
+}
+
+/*Coloca margem na laterais e zera as do top e bottom. Altera o tamanho da fonte*/
+footer{
+  /*margin: 0 5%;*/
+  font-size: 10px;
+}
+
+/*Estilo da imagem do banner*/
+.banner{
+  width: 90%;
+  border: solid 1px #ddd;
+  margin: auto;
+  display: block;
+}
+
+/*Coloca as margens laterais para retirar a duplicidade que havia no section e no footer*/
+.margin-lateral{
+  margin: 0 5%;
+}
+
+/*Coloca borda na imagem com o id*/
+#imagem-aerea{
+  border: solid 1px black;
+}
+
+.modal{
+  width: 50%;
+  border: solid 1px gray;
+  position: fixed;
+  top: 25%;
+  left: 25%;
+  background-color: white;
+  padding: 3%;
+  border-radius: 25px;
+  font-size: 23px;
+  display: none;
+}
+
+/* Inicio estilo formulário professor*/
+
+input, textarea{
+    width: 100%;
+    margin: 10px 0;
+    font-size: 16px;
+    resize: none;
+}
+
+input{
+  height: 29px;
+}
+
+button{
+  border: 0;
+  border-radius: 5px;
+  font-size: 16px;
+  color: white;
+  padding: 7px 25px;
+}
+/* fim estilo formulário professor*/
+
+/* Inicio estilo meu formulário */
+/*.form-contato{
+  width: 50%;
+  border: solid 1px #ddd;
+  margin: auto;
+}
+
+.espacoFormContato{
+    margin: 1% 2%;
+}
+
+#formContato input{
+    width: 95%;
+}
+
+#formContato textarea{
+    width: 95%;
+}*/
+/* fim estilo meu formulário */

@@ -1,0 +1,113 @@
+Client Side - Processado no seu computador
+Server Side - Processado no lado do servidor
+
+https ou http : protocolos/padrões web
+
+Utilização de H1 e etc, são relevantes no rankeamento do seu site, por isso para outros titulos, utilizar css.
+
+Edit>Lines>Auto indent ( Identação automática do Atom)
+
+CSS Grid ( Novidade em css )
+
+Utilizar semantic tags ao invés de várias divs, navegadores e rankiamentos são melhores
+
+Estudo de SO
+
+camel case - novoSalario
+
+
+Javascript ES6
+
+var - let
+
+let o escopo da variável é em bloco
+var o menor escopo é função
+
+aspas duplas para atribuir string, significa que terá uma sequência de caracteres literais
+
+
+document.querySelector('h1') - Busca o elemento h1 na página, pega o primeiro que ele achar
+
+let salario = 1500
+undefined
+let aumento = 0.1
+undefined
+let novoSalario = ( 1 + aumento ) * salario;
+undefined
+novoSalario
+1650.0000000000002
+let nome = "Alana Ceccato"
+undefined
+typeof nome
+"string"
+document.querySelector('h1')
+<h1>​Destino Turístico: Caieiras​</h1>​
+let h1 = document.querySelector('h1')
+undefined
+h1
+<h1>​Destino Turístico: Caieiras​</h1>​
+h1.innerHTML
+"Destino Turístico: Caieiras"
+typeof h1.innerHTML
+"string"
+h1.innerHTML = "Destino Turístico: Carapicuíba"
+"Destino Turístico: Carapicuíba"
+
+
+
+
+pwd - Mostra a pasta que você está
+ls - Listar
+cd - entra na pasta
+cd ../ - volta para a pasta anterior
+cd / - Ele vai para a pasta raiz do sistema
+cd ~ - Vai para a pasta do usuário
+mkdir - cria uma pasta
+rmdir - apaga apenas pastas vazias
+git clone nomedorepositorio - clona a pasta do github para o seu computador
+touch nomearquivo.extensao - cria um arquivo
+
+
+
+Serviço - GitHub, bitBucket, Gitlab
+Tecnologia - GIT
+
+
+position absolute, ele fica de acordo com a position relativo do elemento pai, no caso o body. Por isso você deve colocar position relative no elemento que ele está inserido.
+
+
+
+ls -a - mostra os arquivos ocultos
+git commit - m "comentario" - Comentário do commit que vai realizar
+git status - mostra os arquivos que estão para ser comitados e os que não estão ( verde e vermelho ).
+git add . - adiciona todos os arquivos para serem comitados
+git add index.html - adiciona apenas o arquivo index.html
+git config --add user.name - configura o nome nesse git da pasta
+git config --add user.email - configura o email nesse git da pasta
+git log - mostra todos os logs que foram realizados
+
+
+sass --watch scss/main.scss:styles.css - toda alteração vai ser realizado automaticamente a mudança
+sass scss/main.scss styles.css - atualiza as alterações manualmente
+
+
+package manager
+
+homebrew - package manger mac
+
+node é uma versão do javascript par terminal
+
+cat nomedoaqruivo - coloca o arquivo na tela
+head -10 nomearquivo - lê as primeiras 10 linhas do arquivo
+
+
+criacao de arquivos scss com _ na frente indica que eles são secundarios
+
+gulp - 
+
+cli - no terminal é linha de comando 
+
+
+no install do terminar - npm install (xxx) -g ( Instala global, pode ser utilizada em todos os projetos )
+					   - npm install (xxx) local, só da pra usar naquele projeto
+

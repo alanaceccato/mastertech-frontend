@@ -1,0 +1,41 @@
+<script type="text/javascript">
+
+  function impares() {
+    let numeros = [10, 20, 1, 2.3, 7, 'não sou um número :P'];
+    //For of realizado no novo javascript
+    for (let numero of numeros) {
+      let resto = (numero % 2);
+      if( resto != 0 ){
+        //Interpolação realizada no novo javascript
+        console.log( `Este número é impar ${numero}` );
+      }
+    }
+  }
+
+  function soma() {
+    let numeros = [10, 20, 1, 2.3, 7, 'não sou um número :P'];
+    let soma    = 0;
+    for (let numero of numeros) {
+      if( typeof( numero ) != 'string' ){
+        soma = soma + numero;
+      }
+    }
+
+    console.log( soma );
+
+  }
+
+  function maior() {
+    let numeros = [10, 20, 1, 2.3, 7];
+    let maior   = 0;
+    for (let numero of numeros) {
+      if( maior < numero ){
+        maior = numero;
+      }
+    }
+
+    console.log( maior );
+
+  }
+
+</script>
