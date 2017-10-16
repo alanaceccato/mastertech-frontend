@@ -1,0 +1,26 @@
+//Importa outros arquivos de scss
+@import "cores";
+
+body{
+  background-color: blue;
+}
+
+section {
+  width: 100%;
+  background-color: white;
+  height: 200px;
+
+  .box{
+    //Coloca a cor da borda com o valor da variável
+    border: 2px solid $cor-primaria;
+    border-radius: 10px;
+
+    p{
+      color: $cor-primaria;
+      text-shadow: 2px 2px $cor-perigo;
+      font-size: 20px;
+
+    }
+  }
+
+}

@@ -1,0 +1,44 @@
+<!--
+    EX: Lista de Convidados
+
+    1-  Criar um item (li) dentro do elemento com id #lista para cada convidado no vetor convidados.
+        Cada item deve exibir o nome e a idade do convidado no formato: James Bond - 50
+
+    2- Ao clicar em cada item da lista, ele deve mudar a cor de fundo para vermelho
+-->
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Lista</title>
+  </head>
+
+  <body>
+    <style>
+      #lista {
+        font-family: sans-serif;
+        font-size: 30px;
+        padding: 0 20%;
+        list-style-type: none;
+      }
+
+      #lista li {
+        padding: 10px 30px;
+        cursor: pointer;
+        border-bottom: 1px solid #aaa;
+        width: 100%;
+      }
+
+      .convidadoPresente {
+        background-color: red;
+      }
+    </style>
+
+    <ul id="lista"></ul>
+
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+
+</html>
