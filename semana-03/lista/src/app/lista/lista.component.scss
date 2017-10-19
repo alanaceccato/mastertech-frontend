@@ -1,0 +1,13 @@
+@import "../../assets/scss/cores";
+
+//Seletor especial que existe no Anjular. Ele coloca o estilo no componente, pois outros estilos só se aplicam a tags dentro do componente
+:host{
+  padding: 0 10%;
+  display: block;
+  font-size: 24px;
+}
+
+li{
+  margin: 10px;
+}
+

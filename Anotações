@@ -103,11 +103,16 @@ head -10 nomearquivo - lê as primeiras 10 linhas do arquivo
 
 criacao de arquivos scss com _ na frente indica que eles são secundarios
 
-gulp - 
+gulp -
 
-cli - no terminal é linha de comando 
+cli - no terminal é linha de comando
 
 
 no install do terminar - npm install (xxx) -g ( Instala global, pode ser utilizada em todos os projetos )
 					   - npm install (xxx) local, só da pra usar naquele projeto
 
+
+Frameworks - Angular(Google), REACT(facebook), vue.js
+
+git log mostra os outros commits e os ids deles
+git checkou e o id mostra a versão dele

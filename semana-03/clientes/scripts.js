@@ -4,6 +4,8 @@ class Cliente {
   constructor(nome, email){
     this.nome = nome;
     this.email = email;
+
+    this.compras = [];
   }
 
   dizerNome() {
@@ -20,12 +22,42 @@ class Cliente {
     return gastos;
 
   }
+
+  fazerCompra(item){
+    item.valor = Number(item.valor);
+    this.compras.push(item);
+  }
 }
 
 const clientes = [
   new Cliente('João da Silva', 'joaodasilva@gmail.com'),
   new Cliente('Maria da Silva', 'maria@gmail.com')
 ];
+
+const umCliente = new Cliente('José');
+const inputProduto = document.querySelector('#input-produto');
+const inputValor = document.querySelector('#input-valor');
+const botao = document.querySelector('button');
+
+botao.addEventListener('click', () => {
+  umCliente.fazerCompra({
+    produto: inputProduto.value,
+    valor: inputValor.value
+  });
+  console.log(umCliente);
+});
+
+clientes[0].compras.push({
+  produto: 'Bicicleta',
+  valor: 20
+});
+
+clientes[0].compras.push({
+  produto: 'Betoneira',
+  valor: 400
+});
+
+console.log(umCliente.calcularGastos());
 
 // let humano = new Cliente();
 //     humano.nome  = "João da Silva";
@@ -74,6 +106,6 @@ const clientes = [
 //   }
 // ];
 //
-console.log(clientes[0].dizerNome());
-console.log(clientes[1].dizerNome());
+// console.log(clientes[0].dizerNome());
+// console.log(clientes[1].dizerNome());
 // console.log(clientes[2].calcularGastos());
