@@ -7,20 +7,16 @@ import {TarefasService} from '../tarefas.service';
   styleUrls: ['./form.component.scss']
 })
 export class FormComponent {
-  tarefas;
+  tarefasNoForm;
 
-  constructor(tarefasService: TarefasService) {
-    this.tarefas = tarefasService.tarefas;
+  constructor(private refTarefas: TarefasService) {
+    this.tarefasNoForm = refTarefas.tarefas;
   }
 
-  inserir(tituloTitulo: HTMLInputElement){
-    this.tarefas.push({
-      titulo: tituloTitulo.value,
-      feita: false
-    });
+  inserir(input: HTMLInputElement){
+   this.refTarefas.inserirTarefa(input.value);
 
-    tituloTitulo.value = '';
-    console.log( this.tarefas );
+    input.value = '';
   }
 
 }

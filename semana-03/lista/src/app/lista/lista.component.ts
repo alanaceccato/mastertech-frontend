@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {TarefasService} from "../tarefas.service";
+import {TarefasService} from '../tarefas.service';
 
 @Component({
   selector: 'app-lista',
@@ -7,9 +7,14 @@ import {TarefasService} from "../tarefas.service";
   styleUrls: ['./lista.component.scss']
 })
 export class ListaComponent{
-  tarefas;
+  tarefasNaLista;
 
   constructor(tarefasService: TarefasService){
-    this.tarefas = tarefasService.tarefas;
+    this.tarefasNaLista = tarefasService.tarefas;
+  }
+
+  fazerTarefa( tarefaParam ){
+    tarefaParam.feita = true;
+    console.log( this.tarefasNaLista );
   }
 }

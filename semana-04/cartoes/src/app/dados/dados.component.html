@@ -1,0 +1,11 @@
+<form>
+  <div class="form-group">
+    <label> Número de Funcionários</label>
+    <input class="form-control" name="funcionarios" [(ngModel)]="funcionarios">
+  </div>
+  <div class="form-group">
+    <label> Valor do Vale</label>
+    <input class="form-control" name="valor" [(ngModel)]="valor">
+  </div>
+  <a class="btn btn-primary" (click)="enviar()">Avançar</a>
+</form>
